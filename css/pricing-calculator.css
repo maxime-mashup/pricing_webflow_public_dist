@@ -191,7 +191,7 @@
   align-items: center;
   margin-bottom: 10px;
 }
-.plan-header h2[data-v-264e4c7d] {
+.plan-header p[data-v-264e4c7d] {
   font-size: 30px;
   font-weight: 600;
   margin: 0;
@@ -303,7 +303,6 @@ sup[data-v-264e4c7d] {
   align-items: center;
   gap: 170px;
   max-width: 1200px;
-  width: 100%;
   flex-wrap: wrap;
   justify-content: center;
 }
