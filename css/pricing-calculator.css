@@ -191,7 +191,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   /* Defensive reset: disable Webflow clearfix pseudo-elements acting as flex items */
 }
 .plan-header[data-v-264e4c7d]::before, .plan-header[data-v-264e4c7d]::after {
@@ -200,7 +200,7 @@
 }
 .plan-header p[data-v-264e4c7d] {
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 700;
   margin: 0 !important; /* Prevent global paragraph margins */
   color: var(--primary-text-color);
 }
@@ -229,7 +229,7 @@
 .contact-display[data-v-264e4c7d] {
   font-size: 24px;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 .price-display[data-v-264e4c7d] {
   color: var(--primary-text-color);
@@ -263,12 +263,12 @@
 .features-list[data-v-264e4c7d] {
   list-style: none;
   padding: 0;
-  margin: 0 0 30px 0;
+  margin: 0 0 24px 0;
 }
 .features-list li[data-v-264e4c7d] {
   font-size: 16px;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   gap: 5px;
 }
 .features-list li[data-v-264e4c7d]::before {
@@ -443,17 +443,4 @@
 #app button,
 #app li {
   font-family: "THICCBOI", sans-serif !important;
-}
-
-body {
-  font-family: "Outfit", sans-serif;
-  background-color: #fff;
-  color: #121826;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
 }
