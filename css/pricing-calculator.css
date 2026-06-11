@@ -444,3 +444,16 @@
 #app li {
   font-family: "THICCBOI", sans-serif !important;
 }
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: #fff;
+  color: #121826;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
