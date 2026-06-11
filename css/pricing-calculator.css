@@ -148,7 +148,7 @@
 .period-btn[data-v-592faaf0]:hover:not(.active) {
   background: rgba(107, 31, 77, 0.1);
 }
-
+@charset "UTF-8";
 /* RIGHT COLUMN (CARD) */
 #result-card[data-v-264e4c7d] {
   display: flex;
@@ -164,7 +164,9 @@
   box-shadow: 0 20px 40px -10px rgba(107, 43, 89, 0.15);
   border: 3px solid var(--tertiary-color);
   background: var(--tertiary-color);
+}
 @media (max-width: 400px) {
+.card[data-v-264e4c7d] {
     width: 360px;
 }
 }
@@ -190,11 +192,16 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
+  /* Defensive reset: disable Webflow clearfix pseudo-elements acting as flex items */
+}
+.plan-header[data-v-264e4c7d]::before, .plan-header[data-v-264e4c7d]::after {
+  display: none !important;
+  content: none !important;
 }
 .plan-header p[data-v-264e4c7d] {
   font-size: 30px;
   font-weight: 600;
-  margin: 0;
+  margin: 0 !important; /* Prevent global paragraph margins */
   color: var(--primary-text-color);
 }
 .offer-container[data-v-264e4c7d] {
@@ -202,6 +209,7 @@
   flex-direction: column;
   align-items: center;
   gap: 5px;
+  margin: 0 !important; /* Prevent Webflow margin overrides (like margin-left: auto) */
 }
 .savings-badge[data-v-264e4c7d] {
   background: var(--secondary-color);
@@ -242,10 +250,10 @@
   font-size: 24px;
   font-weight: 700;
   color: var(--primary-text-color);
-sup[data-v-264e4c7d] {
-    font-size: 12px;
-    font-weight: 600;
 }
+.price sup[data-v-264e4c7d] {
+  font-size: 12px;
+  font-weight: 600;
 }
 .period[data-v-264e4c7d] {
   font-size: 18px;
@@ -298,7 +306,6 @@ sup[data-v-264e4c7d] {
 .cta-btn[data-v-264e4c7d]:hover {
   opacity: 0.9;
 }
-
 .container[data-v-42de8368] {
   display: flex;
   align-items: center;
